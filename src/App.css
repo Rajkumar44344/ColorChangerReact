@@ -1,42 +1,50 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+/* General Styling */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: white;
+  /* Default background color */
+  color: #333;
+}
+
+/* Styling for the App Container */
+h1 {
   text-align: center;
+  font-size: 2.5rem;
+  margin: 20px;
+  color: #007BFF;
+  /* Adding color to the title */
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  gap: 10px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Button Styling */
+button {
+  height: 50px;
+  /* Uniform height */
+  width: 150px;
+  /* Uniform width */
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  /* Rounded corners */
+  border: none;
+  outline: none;
+  transition: all 0.3s ease-in-out;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+/* Hover Effect */
+button:hover {
+  transform: scale(1.1);
+  /* Slightly increase size */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
